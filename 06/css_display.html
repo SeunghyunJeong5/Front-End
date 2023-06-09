@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        span{
+            border: 1px solid red;
+            display: block;
+        }
+
+        div{
+            border: 1px solid blue;
+            width: 300px;       /*블락은 기본적으로 100%이므로 width를 줘야 인라인으로 바꿀수가 있다*/
+            height: 300px;
+            background-color: yellowgreen;
+
+            margin: 10px;
+
+            /*display: inline;    /*인라인으로 처리하면서 width와 height속성이 없어짐.*/
+
+            display: inline-block;  /*이건 유지됨*/
+
+            /*float: left;    /*블락으로 출력되는 태그를 왼쪽을 기준으로 끌어올려서 정렬*/
+        }
+    </style>
+</head>
+<body>
+    <h3> css display </h3>
+    <br>
+    <!--
+        display : 화면에 출력을 처리하는 속성
+            inline : 인라인으로 출력
+            block : 블락으로 출력
+            inline-block : 인라인으로 처리하면서 라인이 넘으면 블락형식으로 출력
+    -->
+
+    <!--인라인 ==> 블락형식으로 출력-->
+    <span>span-1</span>
+    <span>span-2</span>
+    <span>span-3</span>
+    <span>span-4</span>
+    <span>span-5</span>
+    <span>span-6</span>
+    <span>span-7</span>
+    <span>span-8</span>
+    <span>span-9</span>
+    <span>span-10</span>
+    
+    <!--블락 ==> 인라인형식으로 출력-->
+    <div>div1</div>
+    <div>div2</div>
+    <div>div3</div>
+    <div>div4</div>
+    <div>div5</div>
+    <div>div6</div>
+    <div>div7</div>
+    <div>div8</div>
+    <div>div9</div>
+    <div>div10</div>
+
+
+
+</body>
+</html>

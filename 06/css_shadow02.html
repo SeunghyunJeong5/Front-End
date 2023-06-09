@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .fdiv{
+            border: 1px solid red;
+            width: 90%;
+            margin: auto;
+
+            
+        }
+
+        img{
+            /*인라인 태그 : padding(좌우) margin(좌우) 만 작동됨. 이미지태그는 다됨*/
+            margin: 20px;
+            padding: 20px;
+
+            /*border: 1px solid red;*/      /*디버깅 목적으로 만들었다가 나중에 지움*/
+            width: 300px;
+            height: 300px;
+        }
+
+        img.shadow1{
+            box-shadow: 10px 10px 30px black;   /*오른쪽이동, 아래로이동, 번짐정도, 색상*/
+
+        }
+
+        .shadow2{
+            box-shadow: 10px -10px 30px black; /*오른쪽이동, 위쪽으로이동, 번짐정도, 색상*/
+        }
+
+
+        .imgdiv{                        /*img파일만 단독으로 넣는 경우가 거의 없고 div박스에 넣어서 사용함*/
+            border: 1px solid red;
+            text-align: center;
+            width: 480px;
+            height: 480px;
+
+           /* float: left; */
+           display: inline-block;
+        }
+
+        .cdiv{
+            border: 1px solid blue;
+            width: 80px;
+            margin: 3px auto;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class = "fdiv">
+<h3> shadow : 그림자 효과 넣기 </h3>
+<hr>
+
+<!--
+    shadow : 수평 그림자 (필수) | 수직 그림자 (필수) | 흐림정도 | 색상 | 삽입효과
+
+-->
+
+<div class="imgdiv"> 
+
+<img src="img/pic1.jpg" class ="shadow1">
+<div class="cdiv">펭귄</div>
+<div class="cdiv">가격</div>
+<div class="cdiv">설명</div>
+
+</div>
+<div class="imgdiv"> 
+
+<img src="img/pic1.jpg" class ="shadow1">
+<div class="cdiv">펭귄</div>
+<div class="cdiv">가격</div>
+<div class="cdiv">설명</div>
+
+</div>
+<div class="imgdiv"> 
+
+<img src="img/pic1.jpg" class ="shadow1">
+<div class="cdiv">펭귄</div>
+<div class="cdiv">가격</div>
+<div class="cdiv">설명</div>
+
+</div>
+<div class="imgdiv"> 
+
+<img src="img/pic1.jpg" class ="shadow1">
+<div class="cdiv">펭귄</div>
+<div class="cdiv">가격</div>
+<div class="cdiv">설명</div>
+
+</div>
+<div class="imgdiv"> 
+
+<img src="img/pic1.jpg" class ="shadow1">
+<div class="cdiv">펭귄</div>
+<div class="cdiv">가격</div>
+<div class="cdiv">설명</div>
+
+</div>
+<div class="imgdiv"> 
+
+<img src="img/pic1.jpg" class ="shadow1">
+<div class="cdiv">펭귄</div>
+<div class="cdiv">가격</div>
+<div class="cdiv">설명</div>
+
+</div>
+<div class="imgdiv"> 
+
+<img src="img/pic1.jpg" class ="shadow1">
+<div class="cdiv">펭귄</div>
+<div class="cdiv">가격</div>
+<div class="cdiv">설명</div>
+
+</div>
+<div class="imgdiv"> 
+
+<img src="img/pic1.jpg" class ="shadow1">
+<div class="cdiv">펭귄</div>
+<div class="cdiv">가격</div>
+<div class="cdiv">설명</div>
+
+</div>
+<div class="imgdiv"> 
+
+<img src="img/pic1.jpg" class ="shadow1">
+<div class="cdiv">펭귄</div>
+<div class="cdiv">가격</div>
+<div class="cdiv">설명</div>
+
+</div>
+<div class="imgdiv"> 
+
+<img src="img/pic1.jpg" class ="shadow1">
+<div class="cdiv">펭귄</div>
+<div class="cdiv">가격</div>
+<div class="cdiv">설명</div>
+
+</div>
+<div class="imgdiv"> 
+
+<img src="img/pic1.jpg" class ="shadow1">
+<div class="cdiv">펭귄</div>
+<div class="cdiv">가격</div>
+<div class="cdiv">설명</div>
+
+</div>
+<div class="imgdiv"> 
+
+<img src="img/pic1.jpg" class ="shadow1">
+<div class="cdiv">펭귄</div>
+<div class="cdiv">가격</div>
+<div class="cdiv">설명</div>
+
+</div>
+<div class="imgdiv"> 
+
+<img src="img/pic1.jpg" class ="shadow1">
+<div class="cdiv">펭귄</div>
+<div class="cdiv">가격</div>
+<div class="cdiv">설명</div>
+
+</div>
+<div class="imgdiv"> 
+
+<img src="img/pic1.jpg" class ="shadow1">
+<div class="cdiv">펭귄</div>
+<div class="cdiv">가격</div>
+<div class="cdiv">설명</div>
+
+</div>
+<div class="imgdiv"> 
+
+<img src="img/pic1.jpg" class ="shadow1">
+<div class="cdiv">펭귄</div>
+<div class="cdiv">가격</div>
+<div class="cdiv">설명</div>
+
+</div>
+<div class="imgdiv"> 
+
+<img src="img/pic1.jpg" class ="shadow1">
+<div class="cdiv">펭귄</div>
+<div class="cdiv">가격</div>
+<div class="cdiv">설명</div>
+
+</div>
+<div class="imgdiv"> 
+
+<img src="img/pic1.jpg" class ="shadow1">
+<div class="cdiv">펭귄</div>
+<div class="cdiv">가격</div>
+<div class="cdiv">설명</div>
+
+</div>
+<div class="imgdiv"> 
+
+<img src="img/pic1.jpg" class ="shadow1">
+<div class="cdiv">펭귄</div>
+<div class="cdiv">가격</div>
+<div class="cdiv">설명</div>
+
+</div>
+<div class="imgdiv"> 
+
+<img src="img/pic1.jpg" class ="shadow1">
+<div class="cdiv">펭귄</div>
+<div class="cdiv">가격</div>
+<div class="cdiv">설명</div>
+
+</div>
+<div class="imgdiv"> 
+
+<img src="img/pic1.jpg" class ="shadow1">
+<div class="cdiv">펭귄</div>
+<div class="cdiv">가격</div>
+<div class="cdiv">설명</div>
+
+</div>
+
+
+
+</div>
+    
+</body>
+</html>
