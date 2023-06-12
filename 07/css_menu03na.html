@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0; padding: 0;     
+            transition: 0.5s; 
+        }
+
+        li{
+            list-style: none;    
+        }
+
+        .menu{
+            width: 800px;
+            margin: 150px auto;
+             
+        }
+
+        .menu > li {       
+                
+            width: 20%;      
+            text-align: center;
+            line-height: 50px;      
+            background-color: #5778ff;
+        }
+
+        .submenu > li{
+         
+            line-height: 50px;
+            background-color: #94a9ff;
+        }
+
+        .submenu{
+              
+            height : 0;     
+            overflow: hidden;       
+        }
+
+        .menu > li:hover{
+            background-color: #94a9ff;
+        }
+
+        .menu > li:hover .submenu{
+            height: 250px;      
+        }
+        
+    </style>
+</head>
+<body>
+    <ul class="menu">
+        <li>MENU 1
+            <ul class="submenu">
+                <li>submenu 01</li>
+                <li>submenu 02</li>
+                <li>submenu 03</li>
+                <li>submenu 04</li>
+                <li>submenu 05</li>
+            </ul>
+        </li>
+
+        <li>MENU 2
+            <ul class="submenu">
+                <li>submenu 01</li>
+                <li>submenu 02</li>
+                <li>submenu 03</li>
+                <li>submenu 04</li>
+                <li>submenu 05</li>
+            </ul>
+        </li>
+
+        <li>MENU 3
+            <ul class="submenu">
+                <li>submenu 01</li>
+                <li>submenu 02</li>
+                <li>submenu 03</li>
+                <li>submenu 04</li>
+                <li>submenu 05</li>
+            </ul>
+        </li>
+
+        <li>MENU 4
+            <ul class="submenu">
+                <li>submenu 01</li>
+                <li>submenu 02</li>
+                <li>submenu 03</li>
+                <li>submenu 04</li>
+                <li>submenu 05</li>
+            </ul>
+        </li>
+
+        <li>MENU 5
+            <ul class="submenu">
+                <li>submenu 01</li>
+                <li>submenu 02</li>
+                <li>submenu 03</li>
+                <li>submenu 04</li>
+                <li>submenu 05</li>
+            </ul>
+        </li>
+        
+    </ul>
+</body>
+</html>

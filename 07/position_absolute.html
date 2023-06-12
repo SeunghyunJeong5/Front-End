@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0; padding: 0;
+        }
+        #parent{
+            position: relative;
+            left: 0;
+            top: 0;
+
+            width: 500px;
+            height: 300px;
+            border: 5px solid black;
+            margin: 300px 0 0 300px;      /*top right bottom left 순임*/
+            
+        }
+
+        #box1, #box2, #box3{
+            width: 80px;
+            height: 80px;
+        }
+
+        #box1{background-color: red;}
+        #box2{
+            background-color: green;
+            position: absolute;            
+            top: 20px;
+            left: 30px;
+            
+        }
+        #box3{background-color: yellow;}
+
+
+    </style>
+</head>
+<body>
+
+    <!--
+        position : relative : 기준점 : 원래 자신의 위치 , left, top으로 이동
+                                    ==> 자신의 자리는 그대로 유지됨
+
+                    absolute : 기준점 : 부모를 기준으로 이동(부모의 왼쪽위 좌표)
+                                    ==> 자신의 자리가 없어져 버림
+                                    --부모에서 포지션이 지정되지 않은 경우(position 기능을 이용한 경우를 말함)는 왼쪽상단(0,0) 기준점으로 설정함
+                                    --부모에서 포지션이 설정되어 있는 경우는 부모를 기준점으로 설정후 이동됨
+
+                    fixed
+
+    -->
+
+    <div id="parent">
+        <div id="box1"></div>
+        <div id="box2"></div>
+        <div id="box3"></div>
+
+    </div>
+</body>
+</html>
