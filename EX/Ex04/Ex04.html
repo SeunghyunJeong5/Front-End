@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #f7f7f7;
+            padding: 10px;
+        }
+
+        .d1 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .s2 {
+            margin-left: auto;
+        }
+
+        .n1 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: #f7f7f7;
+        }
+
+        .n1 img {
+            margin: 0 5px;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .a1 {
+            display: flex;
+            align-items: center;
+        }
+
+
+        .a1 .i12 {
+            display: inline-block;
+        }
+
+        .a2 {
+            display: flex;
+            align-items: center;
+        }
+
+        .sc1,
+        .sc2,
+        .sc3 {
+            display: flex;
+            overflow-x: auto;
+
+        }
+
+        .sc1 img,
+        .sc2,
+        .sc3 {
+            flex: 0 0 auto;
+        }
+
+        .sc1 {
+            justify-content: space-between;
+        }
+
+        .sc2 {
+            justify-content: flex-start;
+            display: flex;
+            justify-content: center;
+            align-items: stretch;
+        }
+
+        .sc3 {
+            justify-content: center;
+        }
+
+        .sc3 span {
+            margin-right: 15px;
+        }
+
+        footer {
+            padding: 10px;
+            background-color: #f7f7f7;
+        }
+
+        .d3 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .a3 {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+        .a3 div {
+            margin-bottom: 10px;
+        }
+
+        .a3 select {
+            margin-left: auto;
+        }
+
+        select {
+            padding: 5px;
+        }
+
+        .a3 img {
+            margin-right: 5px;
+        }
+
+        .a3 img:last-child {
+            margin-right: 0;
+        }
+
+        .sc2 article {
+           
+            flex: 1;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="d1">
+            <span class="s1">
+                <img class="i1" src="../Ex04/img/logo.gif" alt="Logo">
+                <img class="i2" src="../Ex04/img/moto.gif" alt="Moto">
+            </span>
+            <span class="s2">로그인 | 회원 가입 | 사이트맵 | 회사 소개</span>
+        </div>
+        <hr color="gray">
+        <div>
+            <nav class="n1">
+                <img class="i3" src="../Ex04/img/menu01.gif" alt="Menu 1">
+                <img class="i4" src="../Ex04/img/menu02.gif" alt="Menu 2">
+                <img class="i5" src="../Ex04/img/menu03.gif" alt="Menu 3">
+                <img class="i6" src="../Ex04/img/menu04.gif" alt="Menu 4">
+                <img class="i7" src="../Ex04/img/menu05.gif" alt="Menu 5">
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="sc1">
+            <img class="i8" src="../Ex04/img/banner01.gif" alt="Banner 1">
+            <img class="i9" src="../Ex04/img/banner02.gif" alt="Banner 2">
+            <img class="i10" src="../Ex04/img/banner03.gif" alt="Banner 3">
+        </section>
+        <div>
+            <section class="sc2">
+                <article class="a1">
+                    <img class="i11" src="../Ex04/img/customer.gif" alt="Customer">
+                    <img class="i12" src="../Ex04/img/more.gif" alt="More">
+                </article>
+                <article class="a2">
+                    <span>
+                        <img class="i13" src="../Ex04/img/notice.gif" alt="Notice"><br>
+                        새로운 상품의 출시를 알려드립니다.<br>
+                        새로운 상품의 출시를 알려드립니다.<br>
+                        새로운 상품의 출시를 알려드립니다.<br>
+                        새로운 상품의 출시를 알려드립니다.
+                    </span>
+                    <span>
+                        <img class="i14" src="../Ex04/img/more.gif" alt="More"><br>
+                        2014-03-03<br>
+                        2014-03-03<br>
+                        2014-03-03<br>
+                        2014-03-03<br>
+                    </span>
+                </article>
+                <article>
+                    <img class="i15" src="../Ex04/img/banner_faq.gif" alt="FAQ Banner">
+                </article>
+            </section>
+        </div>
+
+        <div>
+            <hr color="gray">
+            <section class="sc3">
+                <span>
+                    손해보험 상식<br>
+                    <img src="../Ex04/img/blue_dot.gif" alt="Blue Dot"> 손해보험이란?<br>
+                    <img src="../Ex04/img/blue_dot.gif" alt="Blue Dot"> 나에게 필요한 보험은?<br>
+                    <img src="../Ex04/img/blue_dot.gif" alt="Blue Dot"> 보험약관의 중요성<br>
+                    <img src="../Ex04/img/blue_dot.gif" alt="Blue Dot"> 손해보험의 특징<br>
+                </span>
+                <span>
+                    루바토 보험의 장점<br>
+                    <img src="../Ex04/img/blue_dot.gif" alt="Blue Dot"> 보험료 저렴<br>
+                    <img src="../Ex04/img/blue_dot.gif" alt="Blue Dot"> 신속한 처리 및 보상<br>
+                    <img src="../Ex04/img/blue_dot.gif" alt="Blue Dot"> 만기 시 원리금 보장<br>
+                </span>
+                <span>
+                    고객센터<br>
+                    <img src="../Ex04/img/blue_dot.gif" alt="Blue Dot"> 전국 지점 안내<br>
+                    <img src="../Ex04/img/blue_dot.gif" alt="Blue Dot"> 손해배상 안내<br>
+                    <img src="../Ex04/img/blue_dot.gif" alt="Blue Dot"> 손해보험 FAQ<br>
+                    <img src="../Ex04/img/blue_dot.gif" alt="Blue Dot"> 질문과 답변<br>
+                </span>
+                <span>
+                    마이페이지<br>
+                    <img src="../Ex04/img/blue_dot.gif" alt="Blue Dot"> 계약 조회/변경<br>
+                    <img src="../Ex04/img/blue_dot.gif" alt="Blue Dot"> 보험 계약 갱신<br>
+                    <img src="../Ex04/img/blue_dot.gif" alt="Blue Dot"> 보험료 납입<br>
+                    <img src="../Ex04/img/blue_dot.gif" alt="Blue Dot"> 증명서 발급<br>
+                </span>
+                <span>
+                    가입 안내<br>
+                    <img src="../Ex04/img/blue_dot.gif" alt="Blue Dot"> 공인인증센터<br>
+                    <img src="../Ex04/img/blue_dot.gif" alt="Blue Dot"> 인증서 발급/갱신<br>
+                    <img src="../Ex04/img/blue_dot.gif" alt="Blue Dot"> 인증서 폐기<br>
+                    <img src="../Ex04/img/blue_dot.gif" alt="Blue Dot"> 웹 로그인<br>
+                </span>
+                <span>
+                    회사 소개<br>
+                    <img src="../Ex04/img/blue_dot.gif" alt="Blue Dot"> 기업소개<br>
+                    <img src="../Ex04/img/blue_dot.gif" alt="Blue Dot"> 찾아오시는 길<br>
+                </span>
+            </section>
+        </div>
+    </main>
+    <hr color="green">
+    <footer>
+        <div class="d3">
+            <article>
+                개인정보 취급방침 | 이용 안내 | 이메일 무단수집 거부<br>
+                서민금융119서비스 | 보험범죄 신고 | 전자 민원 접수 | 보험약관 안내 | 금융사기신고센터<br><br>
+                루바토 손해보험(주)<br>
+                대표이사: 홍길동<br>
+                주소: 서울시 강남구 가나나동 123번지<br>
+                전화: (02)123-1234, FAX: (02)134-4747<br>
+                Copyright by Rubato Company All Rights Reserved.
+            </article>
+            <article class="a3">
+                <div><img src="../Ex04/img/phonenum.gif" alt="Phone Number"></div>
+                <div>
+                    <select name="site">
+                        <option selected value="01">네이버</option>
+                        <option value="02">구글</option>
+                        <option value="03">다음</option>
+                        <option value="04">네이트</option>
+                    </select>
+                </div>
+                <div>
+                    <img src="../Ex04/img/f.gif" alt="Facebook">
+                    <img src="../Ex04/img/b.gif" alt="Blog">
+                    <img src="../Ex04/img/t.gif" alt="Twitter">
+                </div>
+            </article>
+        </div>
+    </footer>
+</body>
+
+</html>

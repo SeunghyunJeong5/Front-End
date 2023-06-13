@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .whole {
+            margin: auto;
+            width: 1050px;
+            height: 1000px;
+        }
+
+        .row1 {
+            float: left;
+            /*margin-left: 400px;*/
+            width: 300px;
+            height: 800px;
+        }
+
+        .row2 {
+            /*margin-right: 200px;*/
+            margin-left: 300px;
+            /*padding-bottom: 800px;*/
+            width: 750px;
+            height: 800px;
+            /* background-color: rgb(231, 16, 16); */
+            position: relative;
+        }
+
+        .row3 {
+            border-top: 1px solid gray;
+            height: 200px;
+            width: 1050px;
+            /*margin-left: 400px;*/
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        #row3content {
+            position: relative;
+            justify-content: space-evenly;
+            align-items: baseline;
+            align-content: space-around;
+        }
+
+        /*기본 틀*/
+
+        #logobox {
+            margin-left: 60px;
+            margin-top: 30px;
+        }
+
+        #loginbox {
+            margin-top: 10px;
+            margin-left: 5px;
+            background-color: #cccccc;
+            height: 150px;
+            width: 280px;
+            border: red none 1px;
+            border-radius: 10%;
+        }
+
+        #id {
+            margin-left: 10%;
+            width: 50%;
+
+        }
+
+        #pw {
+            margin-left: 10%;
+            width: 50%;
+        }
+
+        #loginimage {
+            float: right;
+            margin-right: 30px;
+
+        }
+
+        #loginbox h3 {
+            float: left;
+            color: lightgreen;
+            margin-left: 5%;
+        }
+
+        #loginbox h4 {
+            float: left;
+            margin-left: 10px;
+        }
+
+        #join {
+            margin-left: 15px;
+            margin-top: 10px;
+        }
+
+        #ullist {
+            margin-top: 10px;
+            background-color: #cccccc;
+            height: 170px;
+            width: 280px;
+            border: none;
+            border-radius: 10%;
+        }
+
+        #ullist {
+            margin-left: 5px;
+        }
+
+        #ullistimage {
+            margin-left: 10px;
+            margin-top: 10px;
+        }
+
+        #topmenu {
+            width: 100%;
+            text-align: right;
+        }
+
+        #menubarimg {
+            position: relative;
+            display: flex;
+        }
+
+        #imgtext1 {
+            margin-top: 2px;
+            margin-left: 30px;
+            position: absolute;
+            top: 30px;
+            color: white;
+            font: bold;
+        }
+
+        #imgtext2 {
+            writing-mode: horizontal-tb;
+            margin-top: 2px;
+            margin-left: 200px;
+            position: absolute;
+            top: 30px;
+            color: white;
+            font: bold;
+        }
+
+        #imgtext3 {
+            writing-mode: horizontal-tb;
+            margin-top: 2px;
+            margin-left: 350px;
+            position: absolute;
+            top: 30px;
+            color: white;
+            font: bold;
+        }
+
+        #imgtext4 {
+            writing-mode: horizontal-tb;
+            margin-top: 2px;
+            margin-left: 480px;
+            position: absolute;
+            top: 30px;
+            color: white;
+            font: bold;
+        }
+
+        #imgtext5 {
+            writing-mode: horizontal-tb;
+            margin-top: 2px;
+            margin-left: 630px;
+            position: absolute;
+            top: 30px;
+            color: white;
+            font: bold;
+        }
+
+        #mainimg {
+            margin-top: 10px;
+        }
+
+        #notice {
+            width: 380px;
+            height: 125px;
+        }
+
+        #notice_title1 {
+            margin-left: 2px;
+        }
+
+        #notice_more {
+            margin-left: 265px;
+        }
+
+        #notice_book {
+            margin-left: 30px;
+            position: relative;
+        }
+
+        #noticetxt1 {
+            position: absolute;
+            margin-left: 20px;
+            font-size: 12px;
+            font: bold;
+        }
+
+        #noticetxt2 {
+            position: absolute;
+            margin-left: 20px;
+            margin-top: 20px;
+            font-size: 12px;
+            font: bold;
+        }
+
+        #noticetxt3 {
+            position: absolute;
+            margin-left: 20px;
+            margin-top: 40px;
+            font-size: 12px;
+            font: bold;
+        }
+
+        #noticetxt4 {
+            position: absolute;
+            margin-left: 20px;
+            margin-top: 60px;
+            font-size: 12px;
+            font: bold;
+        }
+
+        #noticedate1 {
+            position: absolute;
+            font-size: 12px;
+            font: bold;
+            margin-top: px;
+            margin-left: 180px;
+        }
+
+        #noticedate2 {
+            position: absolute;
+            font-size: 12px;
+            font: bold;
+            margin-top: 20px;
+            margin-left: 180px;
+        }
+
+        #noticedate3 {
+            position: absolute;
+            font-size: 12px;
+            font: bold;
+            margin-top: 40px;
+            margin-left: 180px;
+        }
+
+        #noticedate4 {
+            position: absolute;
+            font-size: 12px;
+            font: bold;
+            margin-top: 60px;
+            margin-left: 180px;
+        }
+
+        #free {
+            width: 380px;
+            height: 125px;
+            /* float: left; */
+        }
+
+        #free_title1 {
+            margin-left: 2px;
+        }
+
+        #free_more {
+            margin-left: 255px;
+        }
+
+        #free_book {
+            margin-left: 30px;
+            position: relative;
+        }
+
+        #free_text1 {
+            position: absolute;
+            margin-left: 20px;
+            font-size: 12px;
+            font: bold;
+        }
+
+        #free_text2 {
+            position: absolute;
+            margin-left: 20px;
+            margin-top: 20px;
+            font-size: 12px;
+            font: bold;
+        }
+
+        #free_text3 {
+            position: absolute;
+            margin-left: 20px;
+            margin-top: 40px;
+            font-size: 12px;
+            font: bold;
+        }
+
+        #free_text4 {
+            position: absolute;
+            margin-left: 20px;
+            margin-top: 60px;
+            font-size: 12px;
+            font: bold;
+        }
+
+        #freedate1 {
+            position: absolute;
+            font-size: 12px;
+            font: bold;
+            margin-top: px;
+            margin-left: 180px;
+        }
+
+        #freedate2 {
+            position: absolute;
+            font-size: 12px;
+            font: bold;
+            margin-top: 20px;
+            margin-left: 180px;
+        }
+
+        #freedate3 {
+            position: absolute;
+            font-size: 12px;
+            font: bold;
+            margin-top: 40px;
+            margin-left: 180px;
+        }
+
+        #freedate4 {
+            position: absolute;
+            font-size: 12px;
+            font: bold;
+            margin-top: 60px;
+            margin-left: 180px;
+        }
+
+        #youtube {
+            width: 400px;
+            height: 250px;
+            margin-left: 15px;
+        }
+
+        #youtubetitle {
+            margin-left: 2px;
+            /* margin-bottom : 500px; */
+        }
+
+        #content-container {
+            display: flex;
+        }
+
+        #youtubeTitle {
+            margin-left: 10px;
+        }
+
+        #youtubeMore {
+            margin-left: 195px;
+        }
+
+        #youtubeMovie {
+            margin-left: 50px;
+            margin-top: 5px;
+        }
+
+        #gallery {
+            margin-top: 15px;
+        }
+
+        #galleryTitle {
+            margin-left: 2px;
+        }
+
+        #galleryBorder {
+            border: 2px grey solid;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+        }
+
+       
+
+
+        #galleryPhoto1 {
+            margin-top: 20px;
+        }
+
+        #galleryPhoto2 {
+            margin-top: 20px;
+        }
+
+        #galleryPhoto3 {
+            margin-top: 20px;
+        }
+
+ 
+        #row3_content1 {
+            margin-left: 150px;
+
+        }
+
+        #row3_content3 {
+            margin-left: 150px;
+        }
+    </style>
+
+</head>
+
+
+<body>
+
+    <div class="whole">
+
+        <div class="row1">
+            <div id="logobox"> <a href="board_list.html"><img src="img/logo.png" alt=""></a></div>
+            <div id="loginbox">
+                <h3>Member</h3>
+                <h4>LOGIN</h4>
+
+                <input type="text" id="id">
+                <img src="img/btn_login.gif" alt="" id="loginimage">
+                <input type="password" id="pw">
+
+                <a href="#"><img src="img/btn_join.gif" alt="" id="join"></a>
+                <img src="img/btn_search.gif" alt="">
+            </div>
+            <div id="ullist">
+                <img src="img/ttl_memo.gif" alt="" id="ullistimage">
+                <hr>
+                <ul>
+                    <li>안녕하세요!</li>
+                    <li>안녕하세요!</li>
+                    <li>안녕하세요!</li>
+                    <li>안녕하세요!</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row2">
+            <div>
+                <div id="topmenu">
+                    <a style="color: black; text-decoration: none;" href="./board_list.html">HOME</a>
+                    |
+                    <a style="color: black; text-decoration: none;" href="board_login.html">LOGIN</a>
+                    |
+                    <a style="color: black; text-decoration: none;" href="#">JOIN</a>
+                    |
+                    <a style="color: black; text-decoration: none;" href="#">NOTICE</a>
+                </div>
+                <div>
+                    <img id="menubarimg" src="img/main_menu_bg.png" alt="">
+
+                    <a href="index.html"><span id="imgtext1">자유 게시판</span></a>
+                    <span id="imgtext2">기타연주</span>
+                    <span id="imgtext3">공동 구매</span>
+                    <span id="imgtext4">연주회 안내</span>
+                    <span id="imgtext5">회원 게시판</span>
+
+                    <div>
+                        <img id="mainimg" src="img/main_img.png" alt="">
+                    </div>
+
+                    <div id="content-container">
+
+                        <div id="noticeAndFree">
+
+                            <div id="notice">
+                                <img id="notice_title1" src="img/latest1.gif" alt="">
+                                <img id="notice_more" src="img/more.gif" alt="">
+                                <hr>
+                                <img id="notice_book" src="img/book_pen.gif" alt="">
+                                <span id="noticetxt1">루바토 개편과 사이트 이용...</span>
+                                <span id="noticetxt2">루바토 개편과 사이트 이용...</span>
+                                <span id="noticetxt3">루바토 개편과 사이트 이용...</span>
+                                <span id="noticetxt4">루바토 개편과 사이트 이용...</span>
+
+                                <span id="noticedate1">2017-09-20</span>
+                                <span id="noticedate2">2017-09-20</span>
+                                <span id="noticedate3">2017-09-20</span>
+                                <span id="noticedate4">2017-09-20</span>
+
+                            </div>
+
+                            <div id="free">
+                                <img id="free_title1" src="img/latest2.gif" alt="">
+                                <a href="index.html"><img id="free_more" src="img/more.gif" alt=""></a>
+                                <hr>
+                                <img id="free_book" src="img/book_pen.gif" alt="">
+                                <span id="free_text1">까스릉님의 선물인 보드카...</span>
+                                <span id="free_text2">까스릉님의 선물인 보드카...</span>
+                                <span id="free_text3">까스릉님의 선물인 보드카...</span>
+                                <span id="free_text4">까스릉님의 선물인 보드카...</span>
+
+                                <span id="freedate1">2017-09-20</span>
+                                <span id="freedate2">2017-09-20</span>
+                                <span id="freedate3">2017-09-20</span>
+                                <span id="freedate4">2017-09-20</span>
+                            </div>
+                        </div>
+
+                        <div id="youtube">
+                            <img id="youtubeTitle" src="img/latest3.gif" alt="">
+                            <img id="youtubeMore" src="img/more.gif" alt="">
+                            <hr>
+                            <img id="youtubeMovie" src="img/bach.jpg" alt="">
+                        </div>
+                    </div>
+                    <!--display: flex 사용!-->
+                    <div id="gallery">
+                        <img id="galleryTitle" src="img/latest4.gif" alt="">
+                        <div id="galleryBorder">
+                            <div class="photoBox1">
+                                <!-- display :flex 사용 -->
+                                <img id="galleryPhoto1" src="img/img1.jpg" alt="">
+                                <div class="photoBoxText1">기타 페스티벌 4중주</div>
+                            </div>
+                            <div class="photoBox2">
+                                <img id="galleryPhoto2" src="img/img1.jpg" alt="">
+                                <div class="photoBoxText2">기타 페스티벌 4중주</div>
+                            </div>
+                            <div class="photoBox3">
+                                <img id="galleryPhoto3" src="img/img1.jpg" alt="">
+                                <div class="photoBoxText3">기타 페스티벌 4중주</div>
+                            </div>
+                           
+                        </div>
+
+                        <div id="galleryText">
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="row3">
+            <div id="row3content1">
+                <img id="row3Image" src="img/logo_footer.gif" alt="">
+            </div>
+            <div id="row3_content2">
+                <div id="row3Text1">서울시 강남구 삼성동 1234 우 : 123-1234</div>
+                <div id="row3Text2">TEL:031-123-1234 Email: email.domain.com</div>
+                <div id="row3Text3">COPYRIGHT (C) 루바토 ALL RIGHTS RESERVED</div>
+            </div>
+            <div id="row3_content3">
+                <img src="img/facebook.gif" alt="">
+                <img src="img/blog.gif" alt="">
+                <img src="img/twitter.gif" alt="">
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+</body>
+
+
+</html>

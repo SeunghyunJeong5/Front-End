@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: relative;             /*relative는 그냥 원래위치로부터 이동, absolute는 왼쪽위가 기준 혹은 부모의 위치가 정해지면 부모의 왼쪽위가 기준*/
+            /* left: 300px;
+            top: 500px; */
+
+
+            animation: boxmove 5s linear infinite alternate;
+            /*5초동안 작동하는데 keyframes를 통해서 움직이는데 0px에서 시작해서 300px로 이동 하는데 느빠느로 이동하는 linear옵션으로 이동하고, 무한으로 동작하는데, 왔다갔다 반복으로 이동한다는것
+            alternate없으면 그냥 한번 가고 다시 시점으로와서 다시가고 다시가고 함. infinite없으면 한번만 감*/
+        }
+
+        /* keyframes 이름 */
+        @keyframes boxmove {
+            from{left : 0px;}     /*시작점*/
+            to{left : 300px;}   /*종료점*/
+        }
+
+
+
+    </style>
+</head>
+<body>
+    
+    <div> 애니메이션 박스 </div>
+    <p> 참고 : IE9이하 버전에서는 작동되지 않습니다. </p>
+</body>
+</html>
