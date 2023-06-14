@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        .c1 {
+            width: 8.33%;
+            float: left;
+            padding: 15px;
+        }
+
+        .c2 {
+            width: 16.66%;
+            float: left;
+            padding: 15px;
+        }
+
+        .c3 {
+            width: 24.99%;
+            float: left;
+            padding: 15px;
+        }
+
+        .c4 {
+            width: 33.32%;
+            float: left;
+            padding: 15px;
+        }
+
+        .c5 {
+            width: 41.65%;
+            float: left;
+            padding: 15px;
+        }
+
+        .c6 {
+            width: 49.98%;
+            float: left;
+            padding: 15px;
+        }
+
+        .c7 {
+            width: 58.31%;
+            float: left;
+            padding: 15px;
+        }
+
+        .c8 {
+            width: 66.64%;
+            float: left;
+            padding: 15px;
+        }
+
+        .c9 {
+            width: 74.97%;
+            float: left;
+            padding: 15px;
+        }
+
+        .c10 {
+            width: 83.3%;
+            float: left;
+            padding: 15px;
+        }
+
+        .c11 {
+            width: 91.63%;
+            float: left;
+            padding: 15px;
+        }
+
+        .c12 {
+            width: 100%;
+            float: left;
+            padding: 15px;
+        }
+
+
+
+
+        header {
+
+            border-radius: 10px;
+            background-color: blue;
+            color: white;
+            font-size: 50px;
+            text-align: center;
+
+        }
+
+        nav {
+
+            border-radius: 10px;
+            background-color: blueviolet;
+            color: white;
+            font-size: 25px;
+
+        }
+
+        nav li {
+            list-style-type: none;
+        }
+
+
+
+        main {
+            border-radius: 10px;
+            background-color: #cccccc;
+            color: black;
+            font-size: 40px;
+            text-align: center;
+
+
+
+        }
+
+        table {
+
+
+            display: flex;
+            justify-content: center;
+
+            text-align: center;
+            font-size: 35px;
+        }
+
+        footer {
+            background: linear-gradient(90deg, blue, rgb(209, 209, 231));
+            border-radius: 10px;
+            background-color: blue;
+            font-size: 35px;
+            color: white;
+        }
+
+        body {
+            margin-right: 40px;
+        }
+
+        @media only screen and (max-width : 600px) {
+            [class*="c"] {
+            float: left;
+            padding: 10px;
+            width: 100%;
+        }
+
+        }
+    </style>
+</head>
+
+<body>
+    <form name="myForm" action="login.do" method="GET">
+
+        <header class="c12">
+            쇼핑몰 회원관리 VER 1.0
+        </header>
+        <nav class="c12">
+            <ul>
+                <li class="c2">회원 등록</li>
+                <li class="c2">회원목록조회/수정</li>
+                <li class="c2">회원매출조회</li>
+                <li class="c2">홈으로</li>
+            </ul>
+
+        </nav>
+
+        <main class="c12">
+
+
+
+            쇼핑몰 회원 등록
+
+            <table border="2px">
+                <tr>
+                    <td> 회원번호(자동발생) </td>
+                    <td> <input type="text"></td>
+                </tr>
+
+                <tr>
+                    <td> 회원성명 </td>
+                    <td> <input type="text"></td>
+                </tr>
+
+                <tr>
+                    <td> 회원주소 </td>
+                    <td> <input type="text"></td>
+                </tr>
+
+                <tr>
+                    <td> 가입일자 </td>
+                    <td> <input type="text"></td>
+                </tr>
+
+                <tr>
+                    <td> 고객등급[A:VIP,B:일반,C:직원]</td>
+                    <td> <input type="text"></td>
+                </tr>
+
+                <tr>
+                    <td> 도시코드 </td>
+                    <td> <input type="text"></td>
+                </tr>
+
+                <tr>
+                    <td colspan="2"> <button>등록</button> &nbsp; <button>조회</button></td>
+
+                </tr>
+
+
+
+            </table>
+
+
+
+
+        </main>
+
+
+        <footer class="c12">
+
+            HRDKOREA Copyright@2016 All rights reserve. Human Resources Development Service of Korea
+
+
+        </footer>
+    </form>
+</body>
+
+</html>

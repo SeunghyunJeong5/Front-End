@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "맑은 고딕", "돋움";
+    font-size: 12px;
+    color: #444444;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.clear {
+    clear: both;
+}           
+
+ /*위에 *옵션부터 여기까지는 공통적인 옵션이라고 생각하고 
+                                CSS파일로 만들어서 따로 사용하는것이 낫다. 글씨체 크기, li의 점 없애기, float:left끝내기...*/
