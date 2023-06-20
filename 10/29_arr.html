@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        var kdata = ['서울', '부산', '군포', '대구', '대전'];   //자바는 캐릭터만 ''지만 자바스크립트는 그냥 상관없음.
+    
+        var str1 = kdata.splice(1,2); // 1번방은 포함, 2번방도 포함
+       
+
+        document.write("str1 출력 : "+str1+"<p/>");
+        document.write("원본 kdata 출력 : "+kdata+"<p/>");
+
+
+       //원본에 값을 삭제 후 추가
+       var str2 = kdata.splice(1,1, '강릉', '세종');
+
+       document.write("삭제 데이터 : "+str2+"<p/>");    //서울 대구 대전이 있던 곳에서 대구가 1번방인데 거기를 자르고 1번방있는곳에 두가지를 넣는것
+
+       document.write("원본 kdata 출력 : "+kdata+"<p/>");   //서울 강릉 세종 대전
+
+
+
+        //특정 자리수에서 마지막까지 잘라서 저장
+        var str3 = kdata.splice(2, Number.MAX_VALUE);
+
+        document.write("삭제 데이터 : "+str3+"<p/>");       //세종 대전
+        document.write("원본 kdata 출력 : "+kdata+"<p/>");  //서울 강릉
+
+
+    </script>
+</head>
+<body>
+    <!--
+        splice 메소드 : 특정 범위의 값을 잘라내서 새로운 배열에 저장
+            ==> 배열의 원소를 추가/제거 ==> 원본의 변경사항이 적용됨.
+
+            
+    -->
+</body>
+</html>

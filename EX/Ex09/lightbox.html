@@ -84,8 +84,8 @@
         //자바 스크립트 처리 블락
             //엘리멘트의 class이름을 불러와서 변수에 할당 : getElementsByClassName ==> 여러개면 배열로 자동으로 저장됨
 
-        var pics = document.getElementsByClassName("pic");      //클래스 이름을 가져올때
-        var lightbox = document.getElementById("lightbox");     //id 이름을 가져올때
+        var pics = document.getElementsByClassName("pic");      //클래스 이름을 가져올때(클래스는 이름이 같은 여러개의 클래스를 지정해서 쓴다.)
+        var lightbox = document.getElementById("lightbox");     //id 이름을 가져올때(한개의 요소만 갖고온다.)
         var lightboximage = document.getElementById("lightboxImage");
     
         //for문을 돌면서 작은 이미지 클릭시 함수 호출
