@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #toc-content {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    목차 [<span id="toggle-btn">보이기</span>]
+    <ol id="toc-content">
+        <li> HTML </li>
+        <li> CSS </li>
+        <li> Javascript </li>
+    </ol>
+
+
+    <script>
+        // 기본적으로 ol 태그를 출력안하고, 보이기를 클릭하면 ol태그가 출력되도록
+        // 그리고 출력되었을때는 숨기기라고 처리하고 작동하도록 
+
+
+        var toggleBtn = document.getElementById("toggle-btn");
+        var tocContent = document.getElementById("toc-content");
+
+        toggleBtn.addEventListener("click", function () {
+            if (tocContent.style.display === "none") {
+                tocContent.style.display = "block";
+                toggleBtn.innerHTML = "숨기기";
+            } else {
+                tocContent.style.display = "none";
+                toggleBtn.innerHTML = "보이기";
+            }
+        });
+    </script>
+</body>
+
+</html>
